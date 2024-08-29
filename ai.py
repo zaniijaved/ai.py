@@ -81,9 +81,13 @@ print("The time in seconds is: ", outputOfMinutesToSeconds , " seconds")
 #Problem_7
 # program that calculates the percentage
 print("Percentage Calculator")
-percentage = int(input("Enter your percentage: "))
-marks = int(input("Enter your marks: "))
-print("Percentage is: ", ((percentage / 100) * marks))
+def calculatePercentage() -> float:
+    percentage = int(input("Enter your percentage: "))
+    marks = int(input("Enter your marks: "))
+    print("Percentage is: ", ((percentage / 100) * marks))
+    return print
+outputOfPercentage = calculatePercentage()
+print("The percentage is : " , outputOfPercentage ,"%")
 
 #--------------------------------------------------------------------------------
 
